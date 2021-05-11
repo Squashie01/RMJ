@@ -1,0 +1,45 @@
+body{
+	background-color: white;
+}
+#header{
+	height: 15%;
+	margin-bottom: 100px;
+}
+ul.navigation{
+	position: absolute;
+		top: 25px;
+		right: 50px;
+	list-style-type: none;
+}
+ul.navigation li{
+	float: left;
+	margin-left: 50px;
+}
+ul.navigation a{
+
+	text-decoration: none;
+	font-size: 25px;
+	color: green;
+}
+/****Content***/
+#categories{
+	width: 100%;
+}
+.category{
+	
+	text-align: center;
+}
+.category img{
+	width: 150px;
+	height: 111;
+}
+.product{
+	float: left;
+    text-align: center;
+    font-size: 25px;
+}
+input[type = text]{
+	background-color: ##0a9246;
+	position: fixed;
+		right: auto;
+}
