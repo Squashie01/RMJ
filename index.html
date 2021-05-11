@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>RMJ</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script>
+			function loadCategory(category){
+				var params = new URLSearchParams();
+				params.append("category", category);
+				location.href = "category.php?" + params.toString();
+			}
+		</script>
+	</head>
+	<body>
+		<div id = "header">
+				<div id = "Title">
+					<a href = index.html> <img src = "img/RMJ-logo.png" style = "width: 300px; height: 112px;"/></a>
+				</div>
+				<ul class = "navigation">
+					<li><a href = "#">About Us</a> </li>
+					<li><a href = "#">About Barbados</a></li>
+					<li><a href = "#">Marketing</a></li>
+					<li><a href = "#">Contact Us</a></li>
+					<li><a href = "register.html">Register</a></li>
+				</ul>
+		</div>
+		<div id = "content">
+			<h1 style = "text-align: center;">Have a look at the brands we represent by category</h1>
+			<table id = "categories">
+				<tr>
+					<td class = "category" onclick = "loadCategory('food')"><img src = "img/categories/foodlogo.jpg"/> <br/>Food</td>
+					<td class = "category" onclick = "loadCategory('beverage')"><img src = "img/categories/beverageLogo.jpg"/> <br/>Beverages</td>
+					<td class = "category" onclick = "loadCategory('household')"><img src = "img/categories/houseLogo.jpg"/> <br/>Household </td>
+					<td class = "category" onclick = "loadCategory('WineSpiritsRum')"><img src = "img/categories/wineAndSpiritsLogo.jpg"/> <br/>Wines & Spirits</td>
+				</tr>
+				<tr>
+					<td class = "category" onclick = "loadCategory('WineSpiritsRum')"><img src = "img/categories/personalCareLogo.jpg"/> <br/>Personal Care</td>
+					<td class = "category" onclick = "loadCategory('haircare')"><img src = "img/categories/hairLogo.jpg"/> <br/>Hair Care</td>
+					<td class = "category" onclick = "loadCategory('automotive')"><img src = "img/categories/automotiveLogo.jpg"/> <br/>Automotive</td>
+					<td class = "category"><a href = "#"> <img src = "img/categories/allBrandsLogo.jpg"/> <br/>All Brands </a> </td>
+				</tr>
+			</table>
+		</div>
+		
+	</body>
+</html>
