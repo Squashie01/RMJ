@@ -2,6 +2,7 @@
 	<head>
 		<title> RMJ - Food Item </title>
 		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script defer>
 			var limit = 4;
 			var params = new URLSearchParams(window.location.search);
@@ -16,16 +17,17 @@
 				xmlhttp.send();
 			}
 			function loadProduct(){
-				var url = "load-product.php?limit=" + limit + "&category=" + selectedCategory + "&name=" + name;
-				var xmlhttp = new XMLHttpRequest();
-				xmlhttp.onreadystatechange = function() {
-					if (this.readyState == 4 && this.status == 200) {
-						document.getElementById("products").innerHTML = this.responseText;
+				$.post("load-product.php",
+					{
+						Limit: limit,
+						Category: selectedCategory,
+						Name: name
+					},
+					function(data){
+						console.log(data);
+						document.getElementById("products").innerHTML = data;
 					}
-				};
-				xmlhttp.open("GET", url, true);
-				console.log(url);
-				xmlhttp.send();
+				);
 			}
 			function setName(value){
 				name = value;
