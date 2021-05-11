@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RMJ</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- <script src = "js/script.js"></script> -->
+		<script>
+		/*
+			var fName;
+			var LastName;
+			var email;
+			var pNumber;
+			var address;
+			var password;
+			function setValues()
+			{
+				var xmlhttp = new XMLHttpRequest();
+				
+				fName=document.getElementById("Fname");
+				LastName=document.getElementById("Lname");
+				email=document.getElementById("EmailAddress");
+				PNumber=document.getElementById("PNumber");
+				address=document.getElementById("address");
+				password=document.getElementById("Password");
+				xmlhttp.open("POST", "register.php?fName=" + fName + "&lname=" + LastName + "&EmailAddress=" + email + "&PNumber=" + PNumber, "&address=" + address + "&Password=" + password, true;
+				xmlhttp.send();
+				
+				test1();
+			}
+			function test1(){
+				var url = "register.php?limit=" + limit + "&category=" + selectedCategory + "&name=" + name;
+				var xmlhttp = new XMLHttpRequest();
+				xmlhttp.onreadystatechange = function() {
+						document.getElementById("header").innerHTML = this.responseText;
+				};
+				xmlhttp.open("GET", url, true);
+				console.log(url);
+				xmlhttp.send();
+			}
+		*/
+			$(document).ready(function(){
+			  $("button").click(function(){
+				$.post("register.php",
+				{
+				  name: "Donald Duck"
+				},
+				function(data){
+				alert(data);
+				  document.getElementById("header").innerHTML = data ;
+				});
+			  });
+			});
+		</script>
+	</head>
+<body>	
+	<div id = "header">
+		<div id = "Title">
+			<a href = index.html> <img src = "img/RMJ-logo.png" style = "width: 300px; height: 112px;"/></a>
+		</div>
+		<ul class = "navigation">
+			<li><a href="Login.html">Login</a></li>
+			<li><a href = "register.html">Register</a></li>
+			<li><a href = "#">About Us</a> </li>
+			<li><a href = "#">About Barbados</a></li>
+			<li><a href = "#">Marketing</a></li>
+			<li><a href = "#">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<div class="flexbox-container">
+			<form id="Login">
+	  			<!-- Title -->
+				<div class="title">
+					Register
+				</div>
+
+				<br><br>
+
+				<input type="" name="Fname" placeholder="First Name" class="info" id="Fname"> <br><br>
+	  			<input type="" name="Lname" placeholder="Last Name" class="info" id="Lname"> <br><br>
+	  			<input type="email" name="EmailAddress" placeholder="Email Address" class="info" id="EmailAddress"> <br><br>
+	  			<input type="" name="address" placeholder="Address" class="info" id="address"> <br><br>
+	  			<input type="" name="PNumber" placeholder="Phone Number" class="info" id="PNumber"> <br><br>
+	  			<input type="Password" name="Password" placeholder="Password" class="info" id="Password"> <br><br>
+
+	  			<button> Register </button>
+
+	  			<br>
+	  			<br>
+
+	  			<a href="Login.html"> Need to Login? </a>
+  			</form>        
+    </div>
+
+</body>
+</html>
