@@ -11,9 +11,7 @@
     	}
 	//Get Data
 	$limit = $_POST["Limit"];
-	echo "Limit: " . $limit; 
 	$query = 'SELECT * FROM transaction LIMIT ' . $limit ;
-	echo $query;
 	$transactionTable = mysqli_query($conn,$query);
 	if (mysqli_num_rows($transactionTable) > 0) {
 		$output = "<tr>";
