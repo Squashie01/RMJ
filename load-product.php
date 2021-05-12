@@ -16,6 +16,8 @@
 	$query = "SELECT * FROM product ";
 	if($name != "" && $category != "")
 		$query.= "WHERE ProductId LIKE '". $category . "%' AND `ProductName` LIKE '%". $name . "%'";
+	else if ($name != "")
+		$query = "SELECT * FROM product WHERE ProductName LIKE '". $name . "%'";
 	else
 		$query.= "WHERE ProductId LIKE '". $category . "%'";
 	$query .=  " LIMIT " . $limit;

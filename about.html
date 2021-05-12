@@ -3,6 +3,30 @@
 	<head>
 		<title>RMJ</title>
 		<link rel="stylesheet" href="css/style.css">
+		<style>
+			body{
+				color: green;
+			}
+			#Content{
+				text-align: center;
+				padding-left: 25%;
+				padding-right: 25%;
+			}
+			#Cards{
+				padding-left: 25%;
+				padding-right: 25%;
+			}
+			.staffCard{
+				float: left;
+				min-height: 300px;
+				min-width: 200px;
+				box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				margin-bottom: 25px;
+			}
+			.staffCard img{
+				max-width: 100%;
+			}
+		</style>
 	</head>
 	<body>	
 		<div id = "header">
@@ -17,29 +41,39 @@
 		</div>
 		<div id="Content">
 			<h1>Pipeline</h1>
-			<p>
+			<p style = "font-size: 25px">
 				Pipeline aims to fulfills experiences for users and optimal performance for our systems.
 			</p>
+			<div id = "Cards">
+				<div class = "staffCard">
+					<img src = "img/Staff/Luke.jpeg"/>
+					</br>
+					<h2>Luke Greenidge</h2>
+					<h3>#0116031</h3>
+					<p>
+						Project Lead<br/>
+						Database Adminstrator
+					</p>
+				</div>
+				<div class = "staffCard">
+					<img src = "img/Staff/Shanny.jpg"/>
+					</br>
+					<h2>Shanny Singh</h2>
+					<h3>#0113505</h3>
+					<p>
+						UI Designer</br>
+						Programmer</br>
+					</p>
+				</div>
 			<div class = "staffCard">
-				<img src = "#"/>
+				<img src = "img/Staff/Kyrese.jpg"/>
 				</br>
+				<h2>Kyrese Coy</h2>
+				<h3>#0112987</h3>
 				<p>
-					boop
+					Programmer<br/>
 				</p>
 			</div>
-			<div class = "staffCard">
-				<img src = "#"/>
-				</br>
-				<p>
-					boop
-				</p>
-			</div>
-			<div class = "staffCard">
-				<img src = "#"/>
-				</br>
-				<p>
-					boop
-				</p>
 			</div>
 		</div>
 	</body>
