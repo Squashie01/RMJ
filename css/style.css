@@ -63,3 +63,105 @@ input[type = text]{
 {
   background-color: rgb(199, 219, 110);
 }
+
+/* Login */
+#Login-FlexBox-Container
+{
+  display: flex;
+}
+
+#Login
+{
+  float: left;
+  margin-top: 3em;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  width: 40%;
+  height: auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.info
+{
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid rgb(199, 219, 110);
+}
+
+input:focus
+{
+  outline: none;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 550px)
+{
+  #StoreHomePage-FlexBox-Container, #ProductDetails-Container, #ProductDiv, #Login-FlexBox-Container
+  {
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+  }
+
+  #Login-FlexBox-Container
+  {
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #CartButtons
+  {
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -5%;
+    margin-top: 3%;
+  }
+
+  .Products
+  {
+    width: 10em;
+    height: 15em;
+    margin-top: 6.5%;
+    margin-left: 8.5%;
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+  }
+
+  #ProductDetails
+  {
+    height: auto;
+    width: auto;
+    margin-top: 3%;
+    margin-left: -5%;
+    float: left;
+  }
+
+  #Login
+  {
+    float: left;
+    margin-top: 10em;
+    padding-bottom: 1em;
+    width: 75%;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+    text-align: center;
+  }
+}
