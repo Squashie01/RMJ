@@ -43,3 +43,23 @@ input[type = text]{
 	position: fixed;
 		right: auto;
 }
+
+#records
+{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+}
+
+td, th 
+{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) 
+{
+  background-color: rgb(199, 219, 110);
+}
