@@ -1,26 +1,54 @@
 <html>
 	<head>
+		<?PHP
+			session_start(); 
+			$admin=$_SESSION['admin'];
+				if ($_SESSION['customer']!="yes")
+				{
+				header("Location: index.html");
+				}
+				if($admin == 2299)
+				{
+					//echo"test";
+					echo "<div id = 'header'>
+							<div id = 'Title'>"
+							."<a href = index.php> <img src = 'img/RMJ-logo.png' style = 'width: 300px; height: 112px;'/></a>"
+							."</div>"
+							."<ul class = 'navigation'>"
+							."<li><a href = 'transactionReport.php'>  Transaction Report </a> </li>"
+							."<li><a href = 'customerReport.php'> Customer Table </a></li>"
+							."<li><a href = '#'>About Us</a> </li>"
+							."<li><a href='logout.php'> logout</a></li>"
+							."</ul>"
+							."</div>";
+					
+				}
+				else 
+				{
+					echo "<div id = 'header'>
+							<div id = 'Title'>"
+							."<a href = index.php> <img src = 'img/RMJ-logo.png' style = 'width: 300px; height: 112px;'/></a>"
+							."</div>"
+							."<ul class = 'navigation'>"
+							."<li><a href='cart.php'>cart</a></li>"
+							."<li><a href='cusTransactions.php'> reciet </a></li>"
+							."<li><a href = '#'>About Us</a> </li>"
+							."<li><a href='logout.php'> logout</a></li>"
+							."</ul>"
+							."</div>";
+				}
+		?>
 		<title>RMJ</title>
 		<link rel="stylesheet" href="css/style.css">
 		<script>
 			function loadCategory(category){
 				var params = new URLSearchParams();
 				params.append("category", category);
-				location.href = "category.php?" + params.toString();
+				location.href = "category2.php?" + params.toString();
 			}
 		</script>
 	</head>
 	<body>
-		<div id = "header">
-				<div id = "Title">
-					<a href = index.html> <img src = "img/RMJ-logo.png" style = "width: 300px; height: 112px;"/></a>
-				</div>
-				<ul class = "navigation">
-					<li><a href="Login.html">Login</a></li>
-					<li><a href = "register.html">Register</a></li>
-					<li><a href = "about.html">About Us</a> </li>
-				</ul>
-		</div>
 		<div id = "content">
 			<h1 style = "text-align: center;">Have a look at the brands we represent by category</h1>
 			<table id = "categories">

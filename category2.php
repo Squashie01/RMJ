@@ -66,9 +66,7 @@
 					<ul class = "navigation">
 						<li><a href="cart.php">cart</a></li>
 						<li><a href = "#">About Us</a> </li>
-						<li><a href = "#">About Barbados</a></li>
-						<li><a href = "#">Marketing</a></li>
-						<li><a href = "#">Contact Us</a></li>
+
 					</ul>
 				</div>
 				<div id ="content">

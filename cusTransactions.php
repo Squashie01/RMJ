@@ -11,6 +11,7 @@
 				}
 	?>
     <meta charset="utf-8" />
+	<link rel="stylesheet" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 		$.post(
@@ -27,12 +28,14 @@
 		<div id = "Title">
 			<a href = index.html> <img src = "img/RMJ-logo.png" style = "width: 300px; height: 112px;"/></a>
 		</div>
+		<div  id="menuBar">
 			<ul class = "navigation">
 				<li><a href = "#">About Us</a> </li>
 				<li><a href = "#">About Barbados</a></li>
 				<li><a href = "#">Marketing</a></li>
 				<a href = "#">Contact Us</a></li>
 			</ul>
+		</div>
 		</div>
 		<div id ="content">
 		<table id ="records">

@@ -74,9 +74,7 @@
 				<li><a href="Login.html">Login</a></li>
 				<li><a href = "register.html">Register</a></li>
 				<li><a href = "#">About Us</a> </li>
-				<li><a href = "#">About Barbados</a></li>
-				<li><a href = "#">Marketing</a></li>
-				<li><a href = "#">Contact Us</a></li>
+
 			</ul>
 		</div>
 		<div>

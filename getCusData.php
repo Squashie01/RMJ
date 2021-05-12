@@ -13,10 +13,10 @@
 	$limit = $_POST["Limit"];
 	echo "Limit: " . $limit; 
 	$query = 'SELECT * FROM customer LIMIT ' . $limit ;
-	echo $query;
+	//echo $query;
 	$result = mysqli_query($conn,$query);
 	if (mysqli_num_rows($result) > 0) {
-		$output = "";
+		$output = "<tr><th>CustomerId</th><th>First Name</th><th>Last Name</th><th>Email</th><th>Address</th><th>Phone Number</th></tr>";
 		while($row = mysqli_fetch_assoc($result)) {
 			$output .= '<tr>
 					<td>' . $row["CustomerId"]. '</td>'.
@@ -24,8 +24,7 @@
 					'<td>' . $row["LastName"]. '</td>'.
 					'<td>' . $row["MailAddress"]. '</td>'.
 					'<td>' . $row["Address"]. '</td>'.
-					'<td>' . $row["PhoneNumber"]. '</td>'.
-					'<td>' . $row["creditDettails"]. '</td>
+					'<td>' . $row["PhoneNumber"]. '</td>'.'
 				</tr>';
         	}
 	}

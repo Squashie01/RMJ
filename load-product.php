@@ -10,9 +10,9 @@
 		die("Connection failed: " . mysqli_connect_error());
     }
 	//Get data
-	$limit = $_POST["Limit"];
-	$category = $_POST["Category"];
-	$name = $_POST["Name"];
+	$limit = $_GET["limit"];
+	$category = $_GET["category"];
+	$name = $_GET["name"];
 	$query = "SELECT * FROM product ";
 	if($name != "" && $category != "")
 		$query.= "WHERE ProductId LIKE '". $category . "%' AND `ProductName` LIKE '%". $name . "%'";

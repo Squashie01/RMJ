@@ -33,7 +33,7 @@
 	<body>
 				<div id = "header">
 					<div id = "Title">
-						<a href = index.html> <img src = "img/RMJ-logo.png" style = "width: 300px; height: 112px;"/></a>
+						<a href = index.php> <img src = "img/RMJ-logo.png" style = "width: 300px; height: 112px;"/></a>
 					</div>
 					<ul class = "navigation">
 						<li><a href = "#">About Us</a> </li>
