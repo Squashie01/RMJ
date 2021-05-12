@@ -63,3 +63,8 @@ input[type = text]{
 {
   background-color: rgb(199, 219, 110);
 }
+/* About US */
+.staffcard{
+	float: left;
+	color: green;
+}
